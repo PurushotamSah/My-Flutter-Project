@@ -139,6 +139,63 @@
 
 //Chapter 2
 
+// import 'package:flutter/cupertino.dart';
+// import 'package:flutter/material.dart';
+// void main(){
+//   runApp(MaterialApp(
+//     title: "Zero App",
+//     home: HomePage(),
+//   ));
+// }
+// class HomePage extends StatelessWidget {
+//   //const HomePage({Key? key}) : super(key: key);
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title:Text("Welcome to Flutter"),
+//
+//       ),
+//       body: Center(
+//         child: Container(
+//           padding: const EdgeInsets.all(8 ),
+//           alignment: Alignment.center,
+//           decoration: BoxDecoration(
+//             borderRadius: BorderRadius.circular(30),
+//             boxShadow: [
+//               BoxShadow(
+//                 color: Colors.black,
+//                 blurRadius: 10,
+//                 offset: Offset(2.0, 5.0)
+//                 //spreadRadius: 1
+//               )
+//             ],
+//             //shape: BoxShape.circle,
+//             color: Colors.indigo,
+//             gradient: LinearGradient(colors: [
+//               Colors.pink,
+//               Colors.yellow
+//             ])
+//           ),
+//           //color: Colors.indigo,
+//           width: 100,
+//           height: 100,
+//           child: Text("I am Flutter",
+//             textAlign: TextAlign.center,
+//             style: TextStyle(
+//             color: Colors.white,
+//             fontWeight: FontWeight.bold,
+//             fontSize: 20
+//           ),),
+//         ),
+//       ),
+//
+//     );
+//   }
+// }
+
+//Chapter 3
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 void main(){
@@ -157,42 +214,102 @@ class HomePage extends StatelessWidget {
         title:Text("Welcome to Flutter"),
 
       ),
-      body: Center(
-        child: Container(
-          padding: const EdgeInsets.all(8 ),
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black,
-                blurRadius: 10,
-                offset: Offset(2.0, 5.0)
-                //spreadRadius: 1
-              )
-            ],
-            //shape: BoxShape.circle,
-            color: Colors.indigo,
-            gradient: LinearGradient(colors: [
-              Colors.pink,
-              Colors.yellow
-            ])
-          ),
-          //color: Colors.indigo,
-          width: 100,
-          height: 100,
-          child: Text("I am Flutter",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 20
-          ),),
-        ),
+      body: Container(
+        color: Colors.purple,
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8 ),
+
+
+              //color: Colors.indigo,
+              width: 100,
+              height: 100,
+              color: Colors.red,
+            ),
+            Container(
+              padding: const EdgeInsets.all(8 ),
+
+
+              //color: Colors.indigo,
+              width: 100,
+              height: 100,
+              color: Colors.green,
+            ),
+            Container(
+              padding: const EdgeInsets.all(8 ),
+
+
+              //color: Colors.indigo,
+              width: 100,
+              height: 100,
+              color: Colors.blue,
+            ),
+          ],
+        )
       ),
 
     );
   }
 }
 
-//Chapter 3
+// import 'package:flutter/cupertino.dart';
+// import 'package:flutter/material.dart';
+// void main(){
+//   runApp(MaterialApp(
+//     title: "Zero App",
+//     home: HomePage(),
+//   ));
+// }
+// class HomePage extends StatelessWidget {
+//   //const HomePage({Key? key}) : super(key: key);
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title:Text("Welcome to Flutter"),
+//
+//         ),
+//         body:
+//         Column(
+//           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//           crossAxisAlignment: CrossAxisAlignment.center,
+//           children: [
+//             Container(
+//               padding: const EdgeInsets.all(8 ),
+//
+//
+//               //color: Colors.indigo,
+//               width: 100,
+//               height: 100,
+//               color: Colors.red,
+//             ),
+//             Container(
+//               padding: const EdgeInsets.all(8 ),
+//
+//
+//               //color: Colors.indigo,
+//               width: 100,
+//               height: 100,
+//               color: Colors.green,
+//             ),
+//             Container(
+//               padding: const EdgeInsets.all(8 ),
+//
+//
+//               //color: Colors.indigo,
+//               width: 100,
+//               height: 100,
+//               color: Colors.blue,
+//             ),
+//           ],
+//         )
+//
+//
+//     );
+//   }
