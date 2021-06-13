@@ -369,7 +369,7 @@ class _HomePageState extends State<HomePage> {
             child: Card(
               child: Column(
                 children: [
-                  Image.asset("assets/Image1.jpg",fit: BoxFit.cover,
+                  Image.asset("assets/Pandu.jpg",fit: BoxFit.cover,
                   //width: 300,
                   //height: 300,
                   ),
@@ -414,7 +414,7 @@ class _HomePageState extends State<HomePage> {
                   accountName: Text("Purushotam Sah"),
                   accountEmail: Text("purushotamsah26@gmail.com"),
                 currentAccountPicture: CircleAvatar(
-                   backgroundImage: NetworkImage("https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80 "),),
+                   backgroundImage: NetworkImage("https://scontent.fjrh1-1.fna.fbcdn.net/v/t1.6435-9/134996890_3556657751097633_6008597734852706020_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=ZOfglCkzS5AAX8epDGq&_nc_ht=scontent.fjrh1-1.fna&oh=374dd29d0e1eb0ab59ab0952cd5cedf2&oe=60CBAC46"),),
               ),
 
               ListTile(
