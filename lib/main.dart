@@ -214,43 +214,54 @@ class HomePage extends StatelessWidget {
         title:Text("Welcome to Flutter"),
 
       ),
-      body: Container(
-        color: Colors.purple,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              padding: const EdgeInsets.all(8 ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            color: Colors.purple,
+            width: 200,
+            height: 500,
+            //width: MediaQuery.of(context).size.width,
+            //height: MediaQuery.of(context).size.height,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(8 ),
 
 
-              //color: Colors.indigo,
-              width: 100,
-              height: 100,
-              color: Colors.red,
-            ),
-            Container(
-              padding: const EdgeInsets.all(8 ),
+                    //color: Colors.indigo,
+                    width: 100,
+                    height: 100,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8 ),
 
 
-              //color: Colors.indigo,
-              width: 100,
-              height: 100,
-              color: Colors.green,
-            ),
-            Container(
-              padding: const EdgeInsets.all(8 ),
+                    //color: Colors.indigo,
+                    width: 100,
+                    height: 100,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8 ),
 
 
-              //color: Colors.indigo,
-              width: 100,
-              height: 100,
-              color: Colors.blue,
-            ),
-          ],
-        )
+                    //color: Colors.indigo,
+                    width: 100,
+                    height: 100,
+                    color: Colors.blue,
+                  ),
+                ],
+              ),
+            )
+          ),
+        ),
       ),
 
     );
