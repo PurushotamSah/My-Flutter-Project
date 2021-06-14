@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter1/change_name_card.dart';
+//import 'package:flutter1/change_name_card.dart';
+import 'package:http/http.dart' as http;
 import 'package:flutter1/drawer.dart';
 class HomePage extends StatefulWidget {
   //const HomePage({Key? key}) : super(key: key);
@@ -11,6 +12,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   TextEditingController _nameController = TextEditingController();
   var myText ="Change Me";
+  var url = "https://jsonplaceholder.typicode.com/photos";
+  var data;
   @override
   void initState() {
     // TODO: implement initState
@@ -27,9 +30,7 @@ class _HomePageState extends State<HomePage> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
-          child: Card(
-            child: ChangeNameCard(myText: myText, nameController: _nameController),
-          ),
+          child: Card(),
         ),
       ),
 
